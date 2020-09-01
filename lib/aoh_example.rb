@@ -20,12 +20,11 @@ def literal_aoh
   
   aoh = [{:name => "Don Gately", :occupation => "Live-in Staff"}, {:name =>"Joelle van Dyne", :occupation => "Radio Personality"}, {:name => "Pat Monteseian", :occupation => "Staff"}, {:name => "Kate Gompert", :occupation => "None"}, {:name => "Bruce Green", :occupation => "Fan of Mildred"}]
   return aoh
-    
-  
-  
+
 end
 
 def aoh_lookup(aoh, row, key)
+  return aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
